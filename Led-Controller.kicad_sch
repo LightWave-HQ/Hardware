@@ -2912,6 +2912,12 @@
 		(color 0 0 0 0)
 		(uuid "e38e9f32-7aec-42ef-b5ec-531fd06ceef7")
 	)
+	(junction
+		(at 85.09 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbea632a-b3ee-41da-8655-8bc85a8e1148")
+	)
 	(wire
 		(pts
 			(xy 261.62 43.18) (xy 255.27 43.18)
@@ -7255,6 +7261,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 85.09 133.35 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4aecab68-f1f8-477e-b040-374cd631f6bf")
+		(property "Reference" "R11"
+			(at 87.63 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 87.63 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 86.868 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "992c6178-9c7f-4103-b93f-9f690d81956a")
+		)
+		(pin "1"
+			(uuid "9d5eb15a-ac31-4dbc-8f2f-aea9665c96b0")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 113.03 203.2 0)
 		(unit 1)
@@ -11249,6 +11325,72 @@
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 85.09 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d54cf7d7-37d2-4495-825a-6005853e546e")
+		(property "Reference" "#PWR069"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 85.09 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a32f31b-3f25-42e0-9a46-46f929ec3efa")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
