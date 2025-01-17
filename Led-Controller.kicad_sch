@@ -4,6 +4,10 @@
 	(generator_version "8.0")
 	(uuid "222b9972-7c70-4368-986f-3bb219717620")
 	(paper "A3")
+	(title_block
+		(date "2025-01-18")
+		(rev "2")
+	)
 	(lib_symbols
 		(symbol "1ED44175N01BXTSA1:1ED44175N01BXTSA1"
 			(pin_names
@@ -2106,16 +2110,13 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:PMOS"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
+		(symbol "Transistor_FET:CSD18540Q5B"
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2123,8 +2124,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "CSD18540Q5B"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2132,25 +2133,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2159,34 +2163,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "PMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
+			(property "ki_keywords" "NexFET Power MOSFET N-MOS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2195,7 +2172,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "PMOS_0_1"
+			(property "ki_fp_filters" "TDSON*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CSD18540Q5B_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -2282,7 +2268,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -2294,7 +2280,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -2306,7 +2292,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -2318,7 +2304,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -2362,11 +2348,11 @@
 					)
 				)
 			)
-			(symbol "PMOS_1_1"
+			(symbol "CSD18540Q5B_1_1"
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2381,10 +2367,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54) hide
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2401,7 +2387,7 @@
 				)
 				(pin passive line
 					(at 2.54 -5.08 90)
-					(length 2.54)
+					(length 2.54) hide
 					(name "S"
 						(effects
 							(font
@@ -2410,6 +2396,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2920,6 +2942,16 @@
 	)
 	(wire
 		(pts
+			(xy 347.98 119.38) (xy 347.98 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02754539-02e6-4b52-9280-fd854c4cb323")
+	)
+	(wire
+		(pts
 			(xy 261.62 43.18) (xy 255.27 43.18)
 		)
 		(stroke
@@ -2930,7 +2962,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 71.12) (xy 99.06 71.12)
+			(xy 101.6 71.12) (xy 100.33 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2960,13 +2992,13 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 71.12) (xy 52.07 66.04)
+			(xy 322.58 144.78) (xy 312.42 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0c8a833a-7d0b-49aa-a39a-9da506400e9c")
+		(uuid "0f11024e-06a9-4247-8b47-4b0142a90d47")
 	)
 	(wire
 		(pts
@@ -3000,46 +3032,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 80.01) (xy 36.83 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14c4316a-9d95-46a4-8c2b-1f3fe90775b7")
-	)
-	(wire
-		(pts
-			(xy 312.42 45.72) (xy 318.77 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15cc418a-75a6-488e-9307-a16277d99d70")
-	)
-	(wire
-		(pts
-			(xy 312.42 43.18) (xy 350.52 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16cc29ab-e005-4fdb-974c-c0b51a5870b0")
-	)
-	(wire
-		(pts
-			(xy 82.55 66.04) (xy 82.55 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1761e09a-8ef6-49de-804b-ec7cb0b9719b")
-	)
-	(wire
-		(pts
 			(xy 287.02 69.85) (xy 287.02 74.93)
 		)
 		(stroke
@@ -3047,16 +3039,6 @@
 			(type default)
 		)
 		(uuid "17941c1b-b8b8-4cdd-b690-6b29b1813ee3")
-	)
-	(wire
-		(pts
-			(xy 44.45 80.01) (xy 44.45 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17a25a62-5d60-4822-9ec8-fcd97f08cb70")
 	)
 	(wire
 		(pts
@@ -3080,16 +3062,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 71.12) (xy 119.38 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dc347a6-c84a-429e-893f-883481beca19")
-	)
-	(wire
-		(pts
 			(xy 261.62 85.09) (xy 250.19 85.09)
 		)
 		(stroke
@@ -3110,13 +3082,13 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 97.79) (xy 312.42 91.44)
+			(xy 344.17 111.76) (xy 353.06 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "274bcf40-bf6f-4a96-a331-521a4af7a0d3")
+		(uuid "26930ed2-621c-466a-b980-c2aad0a08c6f")
 	)
 	(wire
 		(pts
@@ -3140,6 +3112,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 114.3) (xy 353.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d79d82f-29c4-4443-9bb2-2c4f542672a5")
+	)
+	(wire
+		(pts
 			(xy 237.49 76.2) (xy 237.49 78.74)
 		)
 		(stroke
@@ -3160,67 +3142,27 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 176.53) (xy 345.44 176.53)
+			(xy 347.98 205.74) (xy 312.42 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37192732-dc09-447e-98eb-62ddc1b8b69b")
+		(uuid "37145bcb-7f25-4952-9ef9-6c53fd293491")
 	)
 	(wire
 		(pts
-			(xy 36.83 66.04) (xy 36.83 72.39)
+			(xy 322.58 116.84) (xy 322.58 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3752292c-3549-4eda-ab49-2b0f25b52163")
+		(uuid "406b79b1-0fce-4ef7-8f2a-9fc1de31f682")
 	)
 	(wire
 		(pts
-			(xy 127 66.04) (xy 127 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a34bcf6-253f-451b-8d05-136a3ff6a948")
-	)
-	(wire
-		(pts
-			(xy 312.42 69.85) (xy 312.42 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c16391c-66ff-4c1e-8bf3-d95fdd9ffc20")
-	)
-	(wire
-		(pts
-			(xy 312.42 227.33) (xy 312.42 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df356a7-259f-4948-8b01-594ee4f5b8cf")
-	)
-	(wire
-		(pts
-			(xy 44.45 66.04) (xy 44.45 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e6fa106-be50-44a6-bb97-793a74bf416f")
-	)
-	(wire
-		(pts
-			(xy 299.72 35.56) (xy 304.8 35.56)
+			(xy 299.72 35.56) (xy 309.88 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3230,7 +3172,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 71.12) (xy 52.07 71.12)
+			(xy 57.15 71.12) (xy 55.88 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3240,23 +3182,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 78.74) (xy 64.77 81.28)
+			(xy 312.42 74.93) (xy 344.17 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "450448be-8988-45e6-9adc-694dfe3dbc22")
-	)
-	(wire
-		(pts
-			(xy 82.55 80.01) (xy 82.55 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4aaaa6d5-2847-4376-8865-3bae7ee3f257")
+		(uuid "4337097b-59e3-4c26-af4b-28829a799c79")
 	)
 	(wire
 		(pts
@@ -3300,16 +3232,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 179.07) (xy 318.77 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5488af89-6f2f-4d33-99d6-cdc98bcf5709")
-	)
-	(wire
-		(pts
 			(xy 256.54 168.91) (xy 261.62 168.91)
 		)
 		(stroke
@@ -3330,26 +3252,6 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 111.76) (xy 344.17 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5748284a-b812-41c7-8526-64b146dc0ac6")
-	)
-	(wire
-		(pts
-			(xy 347.98 119.38) (xy 347.98 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "577963b0-24e9-4375-9aa0-934125dfe5f4")
-	)
-	(wire
-		(pts
 			(xy 261.62 40.64) (xy 250.19 40.64)
 		)
 		(stroke
@@ -3360,7 +3262,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 111.76) (xy 344.17 88.9)
+			(xy 344.17 74.93) (xy 344.17 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3390,16 +3292,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 88.9) (xy 344.17 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f67c519-96cb-444a-8dce-e40428247217")
-	)
-	(wire
-		(pts
 			(xy 256.54 80.01) (xy 261.62 80.01)
 		)
 		(stroke
@@ -3420,6 +3312,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 114.3) (xy 312.42 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6732fcdb-b236-486c-a73f-0e4c21632798")
+	)
+	(wire
+		(pts
 			(xy 250.19 173.99) (xy 250.19 185.42)
 		)
 		(stroke
@@ -3427,26 +3329,6 @@
 			(type default)
 		)
 		(uuid "67c5c8f3-2671-447a-b7a2-cd4f179304cb")
-	)
-	(wire
-		(pts
-			(xy 345.44 116.84) (xy 345.44 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6800f59f-b22d-4dcc-9e86-a09b2d03ffd5")
-	)
-	(wire
-		(pts
-			(xy 312.42 132.08) (xy 312.42 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68c9c7e3-ac76-4208-bd3c-ee5e9d67540e")
 	)
 	(wire
 		(pts
@@ -3467,6 +3349,16 @@
 			(type default)
 		)
 		(uuid "6e782623-09cf-472a-b075-ce06b0f3e0eb")
+	)
+	(wire
+		(pts
+			(xy 353.06 109.22) (xy 347.98 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72f02549-c620-4697-a015-f1042278f706")
 	)
 	(wire
 		(pts
@@ -3540,16 +3432,6 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 114.3) (xy 344.17 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dfcea01-db47-4036-a187-add9fd2993c9")
-	)
-	(wire
-		(pts
 			(xy 250.19 132.08) (xy 250.19 143.51)
 		)
 		(stroke
@@ -3600,26 +3482,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 215.9) (xy 312.42 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85b873bf-a88c-4549-a4e4-c083ed43b517")
-	)
-	(wire
-		(pts
-			(xy 312.42 144.78) (xy 312.42 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87ba4e56-d4da-406e-9afb-9ee988d86ae6")
-	)
-	(wire
-		(pts
 			(xy 287.02 116.84) (xy 287.02 121.92)
 		)
 		(stroke
@@ -3650,16 +3512,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 138.43) (xy 318.77 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92529b19-cec6-4d0e-98dc-f004d4ba775e")
-	)
-	(wire
-		(pts
 			(xy 287.02 139.7) (xy 287.02 143.51)
 		)
 		(stroke
@@ -3670,43 +3522,13 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 220.98) (xy 350.52 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "950f5d33-b0af-490a-822d-0d76abea0a0b")
-	)
-	(wire
-		(pts
-			(xy 127 80.01) (xy 127 81.28)
+			(xy 125.73 80.01) (xy 125.73 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9aaea43b-6f66-4a6e-81e2-ca9c56bba510")
-	)
-	(wire
-		(pts
-			(xy 312.42 135.89) (xy 344.17 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e3f8923-d56d-41bd-b66f-fd0cad7b33fc")
-	)
-	(wire
-		(pts
-			(xy 312.42 173.99) (xy 312.42 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9efb3eec-8082-4209-b9c1-c7aa494ab3d5")
 	)
 	(wire
 		(pts
@@ -3730,23 +3552,13 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 218.44) (xy 347.98 218.44)
+			(xy 347.98 109.22) (xy 347.98 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4e92f2e-586d-4b6e-b029-ec5d36461692")
-	)
-	(wire
-		(pts
-			(xy 350.52 116.84) (xy 345.44 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a86da482-4225-4d4e-97d1-74551a3b3d0d")
+		(uuid "a3ddd0c8-67a4-429d-a8b0-ed74abc65d3c")
 	)
 	(wire
 		(pts
@@ -3780,16 +3592,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 71.12) (xy 76.2 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adb79d72-90ad-4e32-82df-26b4c0706030")
-	)
-	(wire
-		(pts
 			(xy 237.49 86.36) (xy 237.49 87.63)
 		)
 		(stroke
@@ -3797,16 +3599,6 @@
 			(type default)
 		)
 		(uuid "b2789aea-3739-4c02-a80c-ff6eec3c8b06")
-	)
-	(wire
-		(pts
-			(xy 90.17 66.04) (xy 90.17 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3f01c1a-ace7-4c17-8997-2b6f6a6bf92f")
 	)
 	(wire
 		(pts
@@ -3830,16 +3622,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 116.84) (xy 312.42 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9ad1d19-89c9-4fa9-8703-fb3e41ac1261")
-	)
-	(wire
-		(pts
 			(xy 85.09 144.78) (xy 85.09 137.16)
 		)
 		(stroke
@@ -3860,13 +3642,13 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 52.07) (xy 312.42 45.72)
+			(xy 317.5 30.48) (xy 347.98 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdf2180a-577a-4492-ac74-e976d3f01078")
+		(uuid "bdfd32c4-209b-4d42-a39a-31c291860cf7")
 	)
 	(wire
 		(pts
@@ -3880,23 +3662,13 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 109.22) (xy 350.52 43.18)
+			(xy 322.58 116.84) (xy 353.06 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf46eeec-1826-4b5a-a7fd-8f82c97f7fbd")
-	)
-	(wire
-		(pts
-			(xy 350.52 121.92) (xy 350.52 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0439a84-5062-4e74-8bfd-f8ee1d2e2143")
+		(uuid "be989bac-a398-43d2-aed6-c18e22a3f826")
 	)
 	(wire
 		(pts
@@ -3917,16 +3689,6 @@
 			(type default)
 		)
 		(uuid "c62ba0ce-81a0-411b-b8a2-a3f2b03a2f84")
-	)
-	(wire
-		(pts
-			(xy 312.42 25.4) (xy 312.42 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8bb9474-9e2d-4612-a5c4-992592be056c")
 	)
 	(wire
 		(pts
@@ -3960,46 +3722,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 78.74) (xy 109.22 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd784179-abfb-4c8e-ae13-f52d16e77aed")
-	)
-	(wire
-		(pts
-			(xy 119.38 71.12) (xy 119.38 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce1c25d3-e15d-4907-936b-bbf088a7b2cf")
-	)
-	(wire
-		(pts
-			(xy 312.42 40.64) (xy 312.42 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cff93ebc-c1bf-4b4d-a93d-2b484f14ae3b")
-	)
-	(wire
-		(pts
-			(xy 90.17 80.01) (xy 90.17 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d030f52b-1cb4-4cb1-baf6-10b26d4b8d05")
-	)
-	(wire
-		(pts
 			(xy 255.27 176.53) (xy 255.27 177.8)
 		)
 		(stroke
@@ -4010,13 +3732,13 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 71.12) (xy 99.06 66.04)
+			(xy 312.42 144.78) (xy 312.42 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0b5a038-1441-4c50-af57-9b0d7ce2f2b4")
+		(uuid "d5782d2e-976d-4c61-a7f6-0d32171ce1fd")
 	)
 	(wire
 		(pts
@@ -4040,26 +3762,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 185.42) (xy 312.42 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd5ddbea-cad4-49d9-b7a3-36ed9fcf2181")
-	)
-	(wire
-		(pts
-			(xy 344.17 114.3) (xy 344.17 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd6e1086-3994-4701-b2cd-01d0d39fc454")
-	)
-	(wire
-		(pts
 			(xy 287.02 168.91) (xy 292.1 168.91)
 		)
 		(stroke
@@ -4080,13 +3782,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 76.2 71.12)
+			(xy 72.39 71.12) (xy 73.66 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e25bba01-1cba-42e9-8a3c-528d6854dc6d")
+	)
+	(wire
+		(pts
+			(xy 118.11 71.12) (xy 116.84 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ec4825-69f5-4dc8-91e5-290f904476f1")
 	)
 	(wire
 		(pts
@@ -4100,6 +3812,16 @@
 	)
 	(wire
 		(pts
+			(xy 347.98 119.38) (xy 353.06 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e96d6557-d929-4e42-8fc8-92c905bd2860")
+	)
+	(wire
+		(pts
 			(xy 85.09 137.16) (xy 97.79 137.16)
 		)
 		(stroke
@@ -4107,36 +3829,6 @@
 			(type default)
 		)
 		(uuid "eb1d2e1a-e893-41e3-a3df-d6ee5a979fb8")
-	)
-	(wire
-		(pts
-			(xy 312.42 200.66) (xy 312.42 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eba0d544-220b-4d7f-bff2-442b24b7e8aa")
-	)
-	(wire
-		(pts
-			(xy 350.52 119.38) (xy 347.98 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef407605-7caa-472b-a553-e5dea10088f0")
-	)
-	(wire
-		(pts
-			(xy 312.42 91.44) (xy 318.77 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0f7a2a3-569a-40ad-875b-a2f35643bd3c")
 	)
 	(wire
 		(pts
@@ -4160,16 +3852,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 158.75) (xy 312.42 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb08d8a8-0ef7-4157-b0dc-2469d31038f5")
-	)
-	(wire
-		(pts
 			(xy 299.72 127) (xy 304.8 127)
 		)
 		(stroke
@@ -4177,16 +3859,6 @@
 			(type default)
 		)
 		(uuid "fd3bd67c-185c-40b5-aa8b-d0614888ac88")
-	)
-	(wire
-		(pts
-			(xy 312.42 85.09) (xy 312.42 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff79e1e2-7730-4865-885a-4dddd2180b86")
 	)
 	(label "IN1"
 		(at 256.54 35.56 0)
@@ -4289,6 +3961,72 @@
 		(uuid "f5142958-cf0e-4a00-9083-cb9c3cb920c9")
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 353.06 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00cb5a55-db23-46d2-b91d-085e4dd8457b")
+		(property "Reference" "#PWR035"
+			(at 353.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 353.06 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 353.06 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 353.06 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 353.06 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb8a1ef4-394a-45ac-8c09-d9e92f178152")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "1ED44175N01BXTSA1:1ED44175N01BXTSA1")
 		(at 274.32 129.54 0)
 		(unit 1)
@@ -4298,7 +4036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "025eb37e-c56a-4a89-aacc-f6822e16536f")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 274.32 114.3 0)
 			(effects
 				(font
@@ -4493,7 +4231,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -4509,7 +4247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "027fdad6-4fea-4800-8489-ae1cb328c750")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 274.32 67.31 0)
 			(effects
 				(font
@@ -4704,7 +4442,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -4931,7 +4669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05e97cbd-b643-4c92-8f3b-d82f5dc320b8")
-		(property "Reference" "C15"
+		(property "Reference" "C11"
 			(at 242.57 130.8099 0)
 			(effects
 				(font
@@ -4985,7 +4723,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C15")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5001,7 +4739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06557416-9961-4ea6-8b49-83180371e359")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR058"
 			(at 287.02 204.47 0)
 			(effects
 				(font
@@ -5051,7 +4789,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR028")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -5059,7 +4797,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 81.28 0)
+		(at 125.73 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5067,8 +4805,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07327878-ff77-49d9-ac96-b2234e882f0a")
-		(property "Reference" "#PWR044"
-			(at 127 87.63 0)
+		(property "Reference" "#PWR029"
+			(at 125.73 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5077,7 +4815,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 86.36 0)
+			(at 125.73 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,7 +4823,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 81.28 0)
+			(at 125.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,7 +4832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 81.28 0)
+			(at 125.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +4841,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 81.28 0)
+			(at 125.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5117,7 +4855,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR044")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -5133,7 +4871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a64ec22-4981-4319-8fc0-09c9b1cd820f")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR049"
 			(at 255.27 162.56 0)
 			(effects
 				(font
@@ -5183,7 +4921,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR020")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5199,7 +4937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "103c59f0-8e8a-44bd-984c-ba0e3879eedf")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR04"
 			(at 237.49 45.72 0)
 			(effects
 				(font
@@ -5249,107 +4987,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 309.88 168.91 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "10b78414-3fa8-4ae5-b83b-7e6a5d3eee7f")
-		(property "Reference" "Q4"
-			(at 316.23 170.1801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 316.23 167.6401 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BSZ180P03:BSZ180P03"
-			(at 314.96 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 309.88 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 309.88 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 309.88 151.765 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 309.88 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 309.88 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "362be65d-2a2c-4574-a563-b64db92c7ceb")
-		)
-		(pin "2"
-			(uuid "f9692667-243b-4f23-8438-c87843d72f73")
-		)
-		(pin "3"
-			(uuid "3603a2d9-4e99-44dc-b327-35f5f724a2d2")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "Q4")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5365,7 +5003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10d13bf9-3e5d-4311-b2af-418b69d5ae27")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR060"
 			(at 238.76 218.44 0)
 			(effects
 				(font
@@ -5415,7 +5053,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR065")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -5431,7 +5069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11cf13aa-e69f-403f-8c99-c5381355b16f")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR031"
 			(at 237.49 93.98 0)
 			(effects
 				(font
@@ -5481,73 +5119,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 312.42 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13226d27-5bae-4188-8f47-8a2ddd9b9b7e")
-		(property "Reference" "#PWR04"
-			(at 312.42 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 312.42 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0c42112-92ac-4fd3-a51f-8a467d26e06b")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR04")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -5563,7 +5135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "145a3e21-811a-45e3-a4c4-068c1e81288c")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 255.27 73.66 0)
 			(effects
 				(font
@@ -5613,7 +5185,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5621,7 +5193,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 99.06 66.04 0)
+		(at 100.33 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5629,8 +5201,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14e002ba-c4ce-4095-bf38-5cd9ae163be9")
-		(property "Reference" "#PWR041"
-			(at 99.06 69.85 0)
+		(property "Reference" "#PWR013"
+			(at 100.33 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5639,7 +5211,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 99.06 60.96 0)
+			(at 100.33 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,7 +5219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 66.04 0)
+			(at 100.33 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5656,7 +5228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 66.04 0)
+			(at 100.33 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5665,7 +5237,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 66.04 0)
+			(at 100.33 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5679,73 +5251,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 312.42 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "157b8d9d-8d75-4ab3-aa9d-9d2e23846f22")
-		(property "Reference" "#PWR024"
-			(at 312.42 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 312.42 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 312.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6897c134-84e5-4ace-8b92-551f21135533")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR024")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5761,7 +5267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "181b29dc-68ff-4230-844d-4c9d637bdadd")
-		(property "Reference" "R9"
+		(property "Reference" "R10"
 			(at 257.81 203.1999 0)
 			(effects
 				(font
@@ -5815,73 +5321,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 312.42 200.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "185b80d6-ec2e-46ac-b820-4faef6e1de32")
-		(property "Reference" "#PWR030"
-			(at 312.42 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 312.42 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 312.42 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "419d25fc-fa2f-4f00-b9d6-b3f9801ced9f")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR030")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5897,7 +5337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c1b00a6-0a53-4ef7-bdee-cf7bdc72d82f")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR033"
 			(at 255.27 102.87 0)
 			(effects
 				(font
@@ -5947,7 +5387,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR09")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5963,7 +5403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d751670-617d-4b42-b83c-e8b6f669b31e")
-		(property "Reference" "C10"
+		(property "Reference" "C5"
 			(at 86.36 74.9299 0)
 			(effects
 				(font
@@ -6017,7 +5457,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C10")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6025,7 +5465,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 80.01 0)
+		(at 134.62 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6033,8 +5473,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d9ed254-56f6-43e7-b98e-97fff0b01f87")
-		(property "Reference" "#PWR046"
-			(at 142.24 86.36 0)
+		(property "Reference" "#PWR028"
+			(at 134.62 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +5483,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 85.09 0)
+			(at 134.62 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,7 +5491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 80.01 0)
+			(at 134.62 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6060,7 +5500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 80.01 0)
+			(at 134.62 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6069,7 +5509,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 80.01 0)
+			(at 134.62 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6083,7 +5523,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR046")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6099,7 +5539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e2563aa-cbab-45ef-ab92-4472c54aff1e")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR06"
 			(at 250.19 58.42 0)
 			(effects
 				(font
@@ -6149,7 +5589,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR01")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6165,7 +5605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23aac41d-1654-4d83-84bd-6f73c8f7f856")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 36.83 109.22 0)
 			(effects
 				(font
@@ -6220,7 +5660,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -6236,7 +5676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23d53e22-1a72-4530-914d-82336cd90da6")
-		(property "Reference" "C4"
+		(property "Reference" "C15"
 			(at 259.08 180.3399 0)
 			(effects
 				(font
@@ -6290,7 +5730,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C4")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -6306,7 +5746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25a1bd72-686b-48c5-a4fc-bdcc2462ad29")
-		(property "Reference" "C2"
+		(property "Reference" "C10"
 			(at 259.08 91.4399 0)
 			(effects
 				(font
@@ -6360,7 +5800,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C2")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6506,7 +5946,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x06")
-		(at 355.6 116.84 0)
+		(at 358.14 114.3 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6514,8 +5954,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f308f55-31ab-4b2b-a606-a1101bab34d8")
-		(property "Reference" "J2"
-			(at 355.6 102.87 0)
+		(property "Reference" "J1"
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6523,7 +5963,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x06"
-			(at 355.6 105.41 0)
+			(at 358.14 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,7 +5971,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-6_P5.08mm"
-			(at 355.6 116.84 0)
+			(at 358.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,7 +5980,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 355.6 116.84 0)
+			(at 358.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6549,7 +5989,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 355.6 116.84 0)
+			(at 358.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6578,7 +6018,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -6594,7 +6034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3037539d-1bb9-4ece-9bc2-041daf854114")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR065"
 			(at 287.02 233.68 0)
 			(effects
 				(font
@@ -6644,7 +6084,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR029")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -6652,7 +6092,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 119.38 66.04 0)
+		(at 118.11 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6660,8 +6100,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "355ae776-dff4-4e2f-bd48-9c0576e3d6f2")
-		(property "Reference" "#PWR040"
-			(at 119.38 69.85 0)
+		(property "Reference" "#PWR014"
+			(at 118.11 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,7 +6110,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 119.38 60.96 0)
+			(at 118.11 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6678,7 +6118,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 66.04 0)
+			(at 118.11 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6687,7 +6127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 66.04 0)
+			(at 118.11 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,7 +6136,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 119.38 66.04 0)
+			(at 118.11 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6710,7 +6150,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR040")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6718,7 +6158,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 52.07 66.04 0)
+		(at 55.88 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6726,8 +6166,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38e7c61f-3042-497d-a909-af666e076790")
-		(property "Reference" "#PWR047"
-			(at 52.07 69.85 0)
+		(property "Reference" "#PWR011"
+			(at 55.88 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6736,7 +6176,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 52.07 60.96 0)
+			(at 55.88 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +6184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 66.04 0)
+			(at 55.88 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6753,7 +6193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 66.04 0)
+			(at 55.88 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6762,7 +6202,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 52.07 66.04 0)
+			(at 55.88 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6776,7 +6216,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR047")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -6784,7 +6224,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 185.42 0)
+		(at 312.42 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6792,8 +6232,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dcab36b-41bc-4042-9271-3b5acc1f773c")
-		(property "Reference" "#PWR034"
-			(at 312.42 191.77 0)
+		(property "Reference" "#PWR052"
+			(at 312.42 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6802,7 +6242,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 190.5 0)
+			(at 312.42 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6810,7 +6250,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 185.42 0)
+			(at 312.42 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6819,7 +6259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 185.42 0)
+			(at 312.42 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6828,7 +6268,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 185.42 0)
+			(at 312.42 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6842,7 +6282,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR034")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -6850,7 +6290,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 142.24 76.2 0)
+		(at 134.62 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6859,7 +6299,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fab1c77-41ab-4127-826d-b32508397dc5")
 		(property "Reference" "C8"
-			(at 146.05 74.9299 0)
+			(at 138.43 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6868,7 +6308,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 146.05 77.4699 0)
+			(at 138.43 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6877,7 +6317,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 143.2052 80.01 0)
+			(at 135.5852 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6886,7 +6326,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 76.2 0)
+			(at 134.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6895,7 +6335,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 142.24 76.2 0)
+			(at 134.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6928,7 +6368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "407230d6-f762-4b77-97a9-6ced18f87f6e")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 257.81 161.2899 0)
 			(effects
 				(font
@@ -6982,7 +6422,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6998,7 +6438,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4419c4f4-4ef4-4781-ac5f-8af0ac27c9e6")
-		(property "Reference" "C9"
+		(property "Reference" "C13"
 			(at 88.9 147.3199 0)
 			(effects
 				(font
@@ -7052,7 +6492,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C9")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7068,7 +6508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "456fa8f2-949e-47dc-895f-1041249342f3")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR050"
 			(at 287.02 162.56 0)
 			(effects
 				(font
@@ -7118,7 +6558,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR022")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -7134,7 +6574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47364555-fc44-43ad-9f69-ad3a2403a261")
-		(property "Reference" "C11"
+		(property "Reference" "C4"
 			(at 48.26 74.9299 0)
 			(effects
 				(font
@@ -7188,7 +6628,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C11")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -7196,7 +6636,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 142.24 72.39 0)
+		(at 134.62 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7204,8 +6644,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "489319f3-bd8a-46de-ad29-a49cb9570989")
-		(property "Reference" "#PWR045"
-			(at 142.24 76.2 0)
+		(property "Reference" "#PWR020"
+			(at 134.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7214,7 +6654,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 142.24 67.31 0)
+			(at 134.62 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7222,7 +6662,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 72.39 0)
+			(at 134.62 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7231,7 +6671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 72.39 0)
+			(at 134.62 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7240,7 +6680,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 142.24 72.39 0)
+			(at 134.62 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7254,7 +6694,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR045")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -7270,7 +6710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aecab68-f1f8-477e-b040-374cd631f6bf")
-		(property "Reference" "R11"
+		(property "Reference" "R7"
 			(at 87.63 132.0799 0)
 			(effects
 				(font
@@ -7324,7 +6764,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R11")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7340,7 +6780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aff5687-48ea-4188-813f-997cec5bc20e")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR059"
 			(at 113.03 209.55 0)
 			(effects
 				(font
@@ -7390,7 +6830,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR036")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -7398,7 +6838,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 81.28 0)
+		(at 36.83 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7406,8 +6846,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b94ef85-7ccd-463f-aceb-878e14937132")
-		(property "Reference" "#PWR054"
-			(at 36.83 87.63 0)
+		(property "Reference" "#PWR024"
+			(at 36.83 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7416,7 +6856,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 86.36 0)
+			(at 36.83 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7424,7 +6864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 81.28 0)
+			(at 36.83 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7433,7 +6873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 81.28 0)
+			(at 36.83 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7442,7 +6882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 81.28 0)
+			(at 36.83 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7456,7 +6896,89 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR054")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:CSD18540Q5B")
+		(at 309.88 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c33046b-b9bf-4d67-9737-dd7bfc6fffd9")
+		(property "Reference" "Q2"
+			(at 316.23 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSD18540Q5B"
+			(at 316.23 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+			(at 314.96 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+			(at 314.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
+			(at 309.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f0eddc7-7423-4d20-b6c7-a2d2f5301b7c")
+		)
+		(pin "5"
+			(uuid "8bd9d18d-8f9e-4660-8610-5469209528ac")
+		)
+		(pin "1"
+			(uuid "c70b22f7-c0e7-4149-b117-ecae6cc4647c")
+		)
+		(pin "4"
+			(uuid "2e1b2453-3123-4097-84f0-5a51678b3a1a")
+		)
+		(pin "3"
+			(uuid "44ec67be-8f08-4bc3-b12e-d1f19d3b2905")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7540,7 +7062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dfcdd44-807c-4043-b7ab-522bf84df69a")
-		(property "Reference" "C16"
+		(property "Reference" "C14"
 			(at 242.57 173.9899 0)
 			(effects
 				(font
@@ -7594,7 +7116,89 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C16")
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:CSD18540Q5B")
+		(at 309.88 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "528fea51-cff4-46b9-a1c0-9e622c421aff")
+		(property "Reference" "Q3"
+			(at 316.23 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSD18540Q5B"
+			(at 316.23 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+			(at 314.96 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+			(at 314.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
+			(at 309.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "476839ac-a66e-4cf0-b40a-a7fbe38527f7")
+		)
+		(pin "5"
+			(uuid "fbc76201-7c7c-43ba-8120-983febdeb1bf")
+		)
+		(pin "1"
+			(uuid "17b5a14f-74e8-4a99-9c21-1526e226ee54")
+		)
+		(pin "4"
+			(uuid "b98366b2-40a7-498f-b3ac-b66710c424ad")
+		)
+		(pin "3"
+			(uuid "34dc5609-dd3f-4c4d-827c-6f05e20b444c")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7602,7 +7206,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 44.45 66.04 0)
+		(at 44.45 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7610,8 +7214,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56f4bfd2-18c1-4416-9ee9-6b716de03f12")
-		(property "Reference" "#PWR055"
-			(at 44.45 69.85 0)
+		(property "Reference" "#PWR016"
+			(at 44.45 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7620,7 +7224,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 44.45 60.96 0)
+			(at 44.45 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7628,7 +7232,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 66.04 0)
+			(at 44.45 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7637,7 +7241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 66.04 0)
+			(at 44.45 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7646,7 +7250,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 44.45 66.04 0)
+			(at 44.45 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7660,7 +7264,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR055")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7676,7 +7280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a3fb184-6477-448f-9968-05cb459442a3")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR057"
 			(at 255.27 204.47 0)
 			(effects
 				(font
@@ -7726,7 +7330,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR026")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7742,7 +7346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cbd83f4-c0fa-48a7-b09b-610cef0d37de")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 295.91 162.56 90)
 			(effects
 				(font
@@ -7794,7 +7398,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R8")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7810,7 +7414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e88806a-1b75-4ac8-a981-274832dea734")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR045"
 			(at 250.19 149.86 0)
 			(effects
 				(font
@@ -7860,7 +7464,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR013")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7946,7 +7550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6788874a-128d-4f69-b315-74df8eac4ab1")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR040"
 			(at 238.76 129.54 0)
 			(effects
 				(font
@@ -7996,7 +7600,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR061")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8012,7 +7616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67e682be-5c65-42d2-a30d-34a1283269f6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR046"
 			(at 255.27 149.86 0)
 			(effects
 				(font
@@ -8062,7 +7666,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR015")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -8078,7 +7682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a437303-24d2-49fd-b5d9-715ca8634365")
-		(property "Reference" "U7"
+		(property "Reference" "U3"
 			(at 109.22 64.77 0)
 			(effects
 				(font
@@ -8133,7 +7737,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U7")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8141,7 +7745,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 127 76.2 0)
+		(at 125.73 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8150,7 +7754,7 @@
 		(fields_autoplaced yes)
 		(uuid "6afa1d93-28f3-4378-942e-4fb9b1822782")
 		(property "Reference" "C7"
-			(at 130.81 74.9299 0)
+			(at 129.54 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8159,7 +7763,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 130.81 77.4699 0)
+			(at 129.54 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8168,7 +7772,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 127.9652 80.01 0)
+			(at 126.6952 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,7 +7781,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 76.2 0)
+			(at 125.73 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8186,7 +7790,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 127 76.2 0)
+			(at 125.73 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,7 +7823,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bb8971c-0dcf-494e-aefd-b36c8a62c5d7")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR01"
 			(at 255.27 29.21 0)
 			(effects
 				(font
@@ -8269,7 +7873,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR06")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -8277,7 +7881,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 144.78 0)
+		(at 312.42 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8285,8 +7889,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70121c57-1665-4893-aadc-95a592bb0f77")
-		(property "Reference" "#PWR033"
-			(at 312.42 151.13 0)
+		(property "Reference" "#PWR043"
+			(at 312.42 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8295,7 +7899,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 149.86 0)
+			(at 312.42 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8303,7 +7907,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 144.78 0)
+			(at 312.42 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8312,7 +7916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 144.78 0)
+			(at 312.42 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8321,7 +7925,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 144.78 0)
+			(at 312.42 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8335,7 +7939,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR033")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -8351,7 +7955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73122b94-2623-442c-8d7f-a2fff8f996fe")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR051"
 			(at 238.76 172.72 0)
 			(effects
 				(font
@@ -8401,7 +8005,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR063")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8409,7 +8013,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 97.79 0)
+		(at 312.42 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8417,8 +8021,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76b95b6c-b792-44f8-880a-abe4e808def2")
-		(property "Reference" "#PWR032"
-			(at 312.42 104.14 0)
+		(property "Reference" "#PWR030"
+			(at 312.42 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8427,7 +8031,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 102.87 0)
+			(at 312.42 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8435,7 +8039,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 97.79 0)
+			(at 312.42 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8444,7 +8048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 97.79 0)
+			(at 312.42 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8453,7 +8057,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 97.79 0)
+			(at 312.42 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8467,107 +8071,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 309.88 127 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "79548f12-40da-465a-a766-9fdda6b1bf07")
-		(property "Reference" "Q3"
-			(at 316.23 128.2701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 316.23 125.7301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BSZ180P03:BSZ180P03"
-			(at 314.96 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 309.88 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 309.88 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 309.88 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 309.88 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 309.88 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11f84a09-bab3-4bf8-995c-bc918fcce6a5")
-		)
-		(pin "2"
-			(uuid "4dc4c68a-6141-469c-8821-237a2048d16b")
-		)
-		(pin "3"
-			(uuid "ef993a3a-292e-4e7f-9a29-25c840582beb")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "Q3")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8583,7 +8087,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d471d49-5072-47a6-8aab-ca2dc315e299")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR037"
 			(at 255.27 120.65 0)
 			(effects
 				(font
@@ -8633,7 +8137,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR014")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8649,7 +8153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fda3444-c815-4359-abdc-ed8018162e60")
-		(property "Reference" "C12"
+		(property "Reference" "C3"
 			(at 40.64 74.9299 0)
 			(effects
 				(font
@@ -8703,7 +8207,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C12")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8719,7 +8223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "833321dd-0cae-4e95-8699-32e418030f33")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR047"
 			(at 287.02 149.86 0)
 			(effects
 				(font
@@ -8769,7 +8273,89 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR017")
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:CSD18540Q5B")
+		(at 314.96 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86d74856-953f-4cd9-9587-bd642bcb2013")
+		(property "Reference" "Q1"
+			(at 321.31 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSD18540Q5B"
+			(at 321.31 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+			(at 320.04 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+			(at 320.04 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
+			(at 314.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99508dcb-e50d-45c1-9596-092e1088d346")
+		)
+		(pin "5"
+			(uuid "db2c3b4e-0eba-47b9-abaf-da124246b1f0")
+		)
+		(pin "1"
+			(uuid "cd1a4d95-d7e0-44d0-80c3-9027667fef68")
+		)
+		(pin "4"
+			(uuid "af61be03-53d3-412a-b001-63511922de6c")
+		)
+		(pin "3"
+			(uuid "cbd66105-3df4-4c4a-b1f5-85948e60cf96")
+		)
+		(instances
+			(project ""
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -8785,7 +8371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89a489da-65f5-4860-9734-b7da81043fa7")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR039"
 			(at 52.07 129.54 0)
 			(effects
 				(font
@@ -8835,7 +8421,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR068")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -8843,7 +8429,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 82.55 66.04 0)
+		(at 82.55 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8851,8 +8437,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ae63033-9f9a-4545-81a4-8de73f0b4a4b")
-		(property "Reference" "#PWR050"
-			(at 82.55 69.85 0)
+		(property "Reference" "#PWR017"
+			(at 82.55 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8861,7 +8447,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 82.55 60.96 0)
+			(at 82.55 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8869,7 +8455,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 66.04 0)
+			(at 82.55 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8878,7 +8464,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 66.04 0)
+			(at 82.55 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8887,7 +8473,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 66.04 0)
+			(at 82.55 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8901,7 +8487,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR050")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -8917,7 +8503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d481fa8-d02f-46a0-9e56-0c0e6974f5a5")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR034"
 			(at 287.02 102.87 0)
 			(effects
 				(font
@@ -8967,7 +8553,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR011")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -8983,7 +8569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9087a0ba-2c47-4433-ab94-6aacc74b6e17")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 242.57 219.7099 0)
 			(effects
 				(font
@@ -9037,7 +8623,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -9053,7 +8639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94ab10df-2e56-4c18-869a-282ce37817da")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR044"
 			(at 238.76 143.51 0)
 			(effects
 				(font
@@ -9103,7 +8689,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR062")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9119,7 +8705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "961eb6ff-c6db-4a88-89ab-da78cf8ff79d")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR038"
 			(at 287.02 120.65 0)
 			(effects
 				(font
@@ -9169,7 +8755,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR016")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9185,7 +8771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98a491fc-d79b-4bb9-96b3-03ff94254775")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 295.91 29.21 90)
 			(effects
 				(font
@@ -9237,107 +8823,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 309.88 210.82 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "995e8768-b909-4485-8828-2397f41eb8a7")
-		(property "Reference" "Q5"
-			(at 316.23 212.0901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 316.23 209.5501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BSZ180P03:BSZ180P03"
-			(at 314.96 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 309.88 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 309.88 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 309.88 193.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 309.88 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 309.88 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a02357ec-aa82-4bcb-86e4-ddcfb7b9a5d8")
-		)
-		(pin "2"
-			(uuid "bc7513cb-5edb-460c-852d-3cb62204ed66")
-		)
-		(pin "3"
-			(uuid "d84c35a1-f8c7-4c53-a2d4-d9021829e400")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "Q5")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9345,7 +8831,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 90.17 66.04 0)
+		(at 90.17 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9353,8 +8839,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a30c74b-4963-45af-b61e-78d784b2a1b4")
-		(property "Reference" "#PWR049"
-			(at 90.17 69.85 0)
+		(property "Reference" "#PWR018"
+			(at 90.17 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9363,7 +8849,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 90.17 60.96 0)
+			(at 90.17 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9371,7 +8857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 66.04 0)
+			(at 90.17 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9380,7 +8866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 66.04 0)
+			(at 90.17 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9389,7 +8875,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 66.04 0)
+			(at 90.17 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9403,7 +8889,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR049")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9411,7 +8897,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 81.28 0)
+		(at 90.17 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9419,8 +8905,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9be7c40b-6ded-4f13-ac1a-210025913041")
-		(property "Reference" "#PWR043"
-			(at 90.17 87.63 0)
+		(property "Reference" "#PWR027"
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9429,7 +8915,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 86.36 0)
+			(at 90.17 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9437,7 +8923,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 81.28 0)
+			(at 90.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9446,7 +8932,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 81.28 0)
+			(at 90.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9455,7 +8941,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 81.28 0)
+			(at 90.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9469,7 +8955,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR043")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9485,7 +8971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e271730-591b-4fd0-9e92-33c20254806b")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 259.08 46.9899 0)
 			(effects
 				(font
@@ -9539,7 +9025,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -9555,7 +9041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e5385e6-cf9f-4975-befd-6710f6d23eb5")
-		(property "Reference" "C5"
+		(property "Reference" "C17"
 			(at 259.08 222.2499 0)
 			(effects
 				(font
@@ -9609,7 +9095,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C5")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -9625,7 +9111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a090dced-88ed-41e9-8ecc-6ca1ae594455")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 257.81 27.9399 0)
 			(effects
 				(font
@@ -9679,7 +9165,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -9695,7 +9181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4875401-5b31-4b22-af0b-ae6d6b8d3cf9")
-		(property "Reference" "R10"
+		(property "Reference" "R11"
 			(at 295.91 204.47 90)
 			(effects
 				(font
@@ -9747,7 +9233,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "R10")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -9763,7 +9249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4bd11e2-ea26-4df3-94da-7c898a865fdc")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR064"
 			(at 255.27 233.68 0)
 			(effects
 				(font
@@ -9813,7 +9299,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR027")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -9829,7 +9315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a84aed2c-1425-4319-a73a-caaaab1652f5")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR055"
 			(at 255.27 191.77 0)
 			(effects
 				(font
@@ -9879,7 +9365,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR021")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -9887,7 +9373,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 227.33 0)
+		(at 312.42 215.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9895,8 +9381,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adf2da04-e6ff-4ef8-813c-43229de31832")
-		(property "Reference" "#PWR035"
-			(at 312.42 233.68 0)
+		(property "Reference" "#PWR061"
+			(at 312.42 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9905,7 +9391,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 232.41 0)
+			(at 312.42 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9913,7 +9399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 227.33 0)
+			(at 312.42 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9922,7 +9408,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 227.33 0)
+			(at 312.42 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9931,7 +9417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 227.33 0)
+			(at 312.42 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,7 +9431,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR035")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -9961,7 +9447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae55cad1-5e9d-4340-867f-959982d31f83")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR053"
 			(at 238.76 186.69 0)
 			(effects
 				(font
@@ -10011,7 +9497,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR064")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10027,7 +9513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af8eb125-8f65-461a-a588-5ae30d46e5d0")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR07"
 			(at 255.27 58.42 0)
 			(effects
 				(font
@@ -10077,107 +9563,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 309.88 35.56 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b00c53c3-9674-4e39-903d-85be86507543")
-		(property "Reference" "Q1"
-			(at 316.23 36.8301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 316.23 34.2901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BSZ180P03:BSZ180P03"
-			(at 314.96 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 309.88 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 309.88 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 309.88 18.415 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 309.88 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 309.88 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d0590fa-c341-4953-af94-b495fac21865")
-		)
-		(pin "2"
-			(uuid "ec2f71ad-89c3-465b-b36f-9da0c0791d91")
-		)
-		(pin "3"
-			(uuid "07c6a47b-9875-46ff-a3cc-1215d3327036")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "Q1")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10193,7 +9579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b49f34cb-e234-46f7-a4d3-9056d40be4ee")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR021"
 			(at 237.49 80.01 0)
 			(effects
 				(font
@@ -10243,7 +9629,89 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR059")
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:CSD18540Q5B")
+		(at 309.88 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4de10d5-db88-455f-bc1c-fd0ca6dea178")
+		(property "Reference" "Q5"
+			(at 316.23 209.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSD18540Q5B"
+			(at 316.23 212.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+			(at 314.96 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+			(at 314.96 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
+			(at 309.88 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b7cf966-3a6f-4620-9892-571e47af58a9")
+		)
+		(pin "5"
+			(uuid "8ad183a2-535c-494b-a3a8-1332070f7510")
+		)
+		(pin "1"
+			(uuid "99d2d1c0-1d70-44cc-937b-3e44c95643eb")
+		)
+		(pin "4"
+			(uuid "713c5925-8302-4f99-a7a1-e82b89f45fcf")
+		)
+		(pin "3"
+			(uuid "d6abf39b-fd93-46fe-9372-42fa087c313d")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -10251,7 +9719,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 81.28 0)
+		(at 64.77 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10259,8 +9727,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7ea7703-723b-45a7-b7e3-555899bd4f69")
-		(property "Reference" "#PWR052"
-			(at 64.77 87.63 0)
+		(property "Reference" "#PWR022"
+			(at 64.77 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10269,7 +9737,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 86.36 0)
+			(at 64.77 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10277,7 +9745,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 81.28 0)
+			(at 64.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10286,7 +9754,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 81.28 0)
+			(at 64.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10295,7 +9763,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 81.28 0)
+			(at 64.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10309,7 +9777,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR052")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10325,7 +9793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b95fa5d3-46ec-44ee-9944-5b653df1b890")
-		(property "Reference" "C3"
+		(property "Reference" "C12"
 			(at 259.08 138.4299 0)
 			(effects
 				(font
@@ -10379,7 +9847,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C3")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -10461,7 +9929,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c23bf425-227c-4d8e-bfeb-20ccb4cbc45b")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR063"
 			(at 250.19 233.68 0)
 			(effects
 				(font
@@ -10511,73 +9979,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 312.42 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2493663-ffe9-4fcc-a11e-50d47fafdb44")
-		(property "Reference" "#PWR012"
-			(at 312.42 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 312.42 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 312.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b0b6d2cf-ccca-4d30-a0dd-8c10e03a3e0e")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR012")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -10593,7 +9995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c35761fb-e11e-4475-baed-467035d20c65")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 287.02 29.21 0)
 			(effects
 				(font
@@ -10643,7 +10045,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -10651,7 +10053,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 81.28 0)
+		(at 44.45 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10659,8 +10061,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4f1aa02-e709-426a-84fc-bb4be56061e9")
-		(property "Reference" "#PWR056"
-			(at 44.45 87.63 0)
+		(property "Reference" "#PWR025"
+			(at 44.45 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10669,7 +10071,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 86.36 0)
+			(at 44.45 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +10079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 81.28 0)
+			(at 44.45 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10686,7 +10088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 81.28 0)
+			(at 44.45 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10695,7 +10097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 81.28 0)
+			(at 44.45 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10709,7 +10111,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR056")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -10725,7 +10127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c57423be-743c-4018-8c58-9214bca33355")
-		(property "Reference" "C13"
+		(property "Reference" "C1"
 			(at 241.3 33.0199 0)
 			(effects
 				(font
@@ -10779,7 +10181,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C13")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -10787,7 +10189,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 109.22 81.28 0)
+		(at 109.22 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10795,8 +10197,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6805264-b625-46ce-9e1c-c0eeabb62c5a")
-		(property "Reference" "#PWR038"
-			(at 109.22 87.63 0)
+		(property "Reference" "#PWR023"
+			(at 109.22 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10805,7 +10207,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 109.22 86.36 0)
+			(at 109.22 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10813,7 +10215,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 81.28 0)
+			(at 109.22 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10822,7 +10224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 81.28 0)
+			(at 109.22 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10831,7 +10233,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 81.28 0)
+			(at 109.22 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10845,7 +10247,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR038")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -11033,106 +10435,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 309.88 80.01 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cba81234-6731-4ad1-8c61-3d35232d4b51")
-		(property "Reference" "Q2"
-			(at 316.23 81.2801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 316.23 78.7401 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BSZ180P03:BSZ180P03"
-			(at 314.96 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 309.88 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 309.88 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 309.88 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 309.88 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 309.88 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7d66f60-7f44-4a23-a103-6e63079b7a20")
-		)
-		(pin "2"
-			(uuid "89bb53c3-ac4f-49f9-9721-a475cfb88358")
-		)
-		(pin "3"
-			(uuid "d1ff8e36-a503-4ee3-a5ef-949dc14912df")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 287.02 52.07 0)
 		(unit 1)
@@ -11142,7 +10444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdb690cc-81a9-4a17-91d9-6ae33be4dda8")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 287.02 58.42 0)
 			(effects
 				(font
@@ -11192,7 +10494,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -11208,7 +10510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf4c1b68-7147-45bf-b792-352c66901ed2")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR042"
 			(at 113.03 135.89 0)
 			(effects
 				(font
@@ -11258,7 +10560,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR037")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -11274,7 +10576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3fd13bd-a715-401e-aae1-0bb073553e12")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR03"
 			(at 237.49 31.75 0)
 			(effects
 				(font
@@ -11324,7 +10626,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR057")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -11340,7 +10642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d54cf7d7-37d2-4495-825a-6005853e546e")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR041"
 			(at 85.09 133.35 0)
 			(effects
 				(font
@@ -11390,7 +10692,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR069")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -11406,7 +10708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d54fd854-49e6-4d94-8f10-ee7294b21062")
-		(property "Reference" "C14"
+		(property "Reference" "C9"
 			(at 241.3 81.2799 0)
 			(effects
 				(font
@@ -11460,7 +10762,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C14")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -11468,7 +10770,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 81.28 0)
+		(at 82.55 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11476,8 +10778,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d65d12bb-def4-47b6-9709-0b8c67d45764")
-		(property "Reference" "#PWR051"
-			(at 82.55 87.63 0)
+		(property "Reference" "#PWR026"
+			(at 82.55 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11486,7 +10788,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 86.36 0)
+			(at 82.55 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11494,7 +10796,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 81.28 0)
+			(at 82.55 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11503,7 +10805,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 81.28 0)
+			(at 82.55 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11512,7 +10814,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 81.28 0)
+			(at 82.55 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11526,7 +10828,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR051")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11608,7 +10910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dad9eec2-9726-4b44-980a-c36131adff96")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR062"
 			(at 238.76 232.41 0)
 			(effects
 				(font
@@ -11658,7 +10960,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR066")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -11674,7 +10976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0bcb5a1-9aed-4489-8a5d-e3e29905ca6c")
-		(property "Reference" "U4"
+		(property "Reference" "U7"
 			(at 274.32 156.21 0)
 			(effects
 				(font
@@ -11869,7 +11171,89 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U4")
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:CSD18540Q5B")
+		(at 309.88 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e17f0b2a-9e1d-4d92-ba09-3111321a03c9")
+		(property "Reference" "Q4"
+			(at 316.23 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSD18540Q5B"
+			(at 316.23 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+			(at 314.96 170.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/csd18540q5b"
+			(at 314.96 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A Id, 60V Vds, NexFET N-Channel Power MOSFET, 2.2mOhm Ron, 41nC Qg(typ), SON8 5x6mm"
+			(at 309.88 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69e5d3be-538d-4bd2-b226-9b3bae3ce9ac")
+		)
+		(pin "5"
+			(uuid "211941cf-8a10-41d6-83ec-a5ffb7e42812")
+		)
+		(pin "1"
+			(uuid "06afa77b-83b3-47fb-903c-2a45d12b74ec")
+		)
+		(pin "4"
+			(uuid "9647d685-fa6a-447d-a74b-6b88fa691200")
+		)
+		(pin "3"
+			(uuid "5787dddb-5ad4-454d-8bc2-589219eb75b3")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -11877,7 +11261,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 36.83 66.04 0)
+		(at 36.83 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11885,8 +11269,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e49619f7-d1dd-4d72-b042-e8e973e45b8a")
-		(property "Reference" "#PWR053"
-			(at 36.83 69.85 0)
+		(property "Reference" "#PWR015"
+			(at 36.83 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11895,7 +11279,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 36.83 60.96 0)
+			(at 36.83 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11903,7 +11287,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 66.04 0)
+			(at 36.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11912,7 +11296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 66.04 0)
+			(at 36.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11921,7 +11305,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 36.83 66.04 0)
+			(at 36.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11935,7 +11319,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR053")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11951,7 +11335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8599d4d-622e-499a-b10e-741996d27710")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR036"
 			(at 52.07 114.3 0)
 			(effects
 				(font
@@ -12001,7 +11385,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR067")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12017,7 +11401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9e36b21-06d2-4201-b2e2-717eb6f20cf4")
-		(property "Reference" "U8"
+		(property "Reference" "U2"
 			(at 64.77 64.77 0)
 			(effects
 				(font
@@ -12072,7 +11456,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U8")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -12080,7 +11464,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 52.07 0)
+		(at 317.5 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12088,8 +11472,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec7f1a75-b5ad-4f9f-8b7e-0f114383783a")
-		(property "Reference" "#PWR031"
-			(at 312.42 58.42 0)
+		(property "Reference" "#PWR05"
+			(at 317.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12098,7 +11482,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 57.15 0)
+			(at 317.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12106,7 +11490,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 52.07 0)
+			(at 317.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12115,7 +11499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 52.07 0)
+			(at 317.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12124,7 +11508,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 52.07 0)
+			(at 317.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12138,7 +11522,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR031")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -12154,7 +11538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed26d732-85cc-41aa-a12f-76241be5492d")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR054"
 			(at 250.19 191.77 0)
 			(effects
 				(font
@@ -12204,7 +11588,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR019")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -12212,7 +11596,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 127 66.04 0)
+		(at 125.73 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12220,8 +11604,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed84bc84-d47a-4bfc-8cd7-e390ecd9753c")
-		(property "Reference" "#PWR042"
-			(at 127 69.85 0)
+		(property "Reference" "#PWR019"
+			(at 125.73 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12230,7 +11614,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 127 60.96 0)
+			(at 125.73 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12238,7 +11622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 66.04 0)
+			(at 125.73 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12247,7 +11631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 66.04 0)
+			(at 125.73 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12256,7 +11640,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 127 66.04 0)
+			(at 125.73 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12270,7 +11654,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR042")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -12286,7 +11670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee8bbea5-57cf-4f4c-aefc-28757bc6b363")
-		(property "Reference" "U5"
+		(property "Reference" "U8"
 			(at 274.32 198.12 0)
 			(effects
 				(font
@@ -12481,7 +11865,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "U5")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -12489,7 +11873,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 76.2 66.04 0)
+		(at 73.66 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12497,8 +11881,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eebb8858-ff9c-47cf-9ca3-603b59f32cc5")
-		(property "Reference" "#PWR039"
-			(at 76.2 69.85 0)
+		(property "Reference" "#PWR012"
+			(at 73.66 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12507,7 +11891,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 76.2 60.96 0)
+			(at 73.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12515,7 +11899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 66.04 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12524,7 +11908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 66.04 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12533,7 +11917,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 76.2 66.04 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12547,7 +11931,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR039")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -12633,7 +12017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9521c7b-efb5-47ae-8f94-10b7eba64dfb")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR032"
 			(at 250.19 102.87 0)
 			(effects
 				(font
@@ -12683,73 +12067,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 312.42 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fac38632-d038-4b47-af4b-a2302b3c29c0")
-		(property "Reference" "#PWR018"
-			(at 312.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 312.42 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 312.42 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a3b8bddf-5594-40f9-af9e-4426b531061f")
-		)
-		(instances
-			(project "Led-Controller"
-				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR018")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -12765,7 +12083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe7f3151-af96-4a11-84b0-8da78cca8854")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR056"
 			(at 287.02 191.77 0)
 			(effects
 				(font
@@ -12815,7 +12133,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR023")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
