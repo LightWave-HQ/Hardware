@@ -932,6 +932,261 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x03_Odd_Even"
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_02x03_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3158,7 +3413,7 @@
 		(uuid "5d556440-b160-4f5d-acda-704b63d4378a")
 	)
 	(junction
-		(at 52.07 111.76)
+		(at 87.63 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8423541d-861d-49f5-96db-4fd64f9af88c")
@@ -3198,6 +3453,16 @@
 			(type default)
 		)
 		(uuid "05548d76-7115-4533-9dfe-1be3c1854b93")
+	)
+	(wire
+		(pts
+			(xy 48.26 116.84) (xy 52.07 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bd3e829-edb2-4fff-8a35-9114f3132914")
 	)
 	(wire
 		(pts
@@ -3301,7 +3566,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 162.56) (xy 92.71 162.56)
+			(xy 121.92 162.56) (xy 128.27 162.56)
 		)
 		(stroke
 			(width 0)
@@ -3321,7 +3586,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 160.02) (xy 92.71 160.02)
+			(xy 64.77 116.84) (xy 67.31 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6244fc65-d61d-4437-bce1-a7574f7ff3bb")
+	)
+	(wire
+		(pts
+			(xy 121.92 160.02) (xy 128.27 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3361,7 +3636,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 157.48) (xy 92.71 157.48)
+			(xy 121.92 157.48) (xy 128.27 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3381,13 +3656,23 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 165.1) (xy 92.71 165.1)
+			(xy 121.92 165.1) (xy 128.27 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8354bff5-a8af-4c7c-9062-12d268be54dc")
+	)
+	(wire
+		(pts
+			(xy 121.92 114.3) (xy 128.27 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860dc2f5-3b5b-4351-8a68-c28bc08dde5b")
 	)
 	(wire
 		(pts
@@ -3401,7 +3686,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 154.94) (xy 92.71 154.94)
+			(xy 48.26 114.3) (xy 52.07 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a4bb09a-8653-4046-8710-d593899b7148")
+	)
+	(wire
+		(pts
+			(xy 121.92 154.94) (xy 128.27 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3418,6 +3713,26 @@
 			(type default)
 		)
 		(uuid "aa9b5cd9-a916-4bb1-8381-5aa09bb4d336")
+	)
+	(wire
+		(pts
+			(xy 121.92 119.38) (xy 128.27 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abe76773-c072-4836-80a0-a23840371efe")
+	)
+	(wire
+		(pts
+			(xy 48.26 111.76) (xy 52.07 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c119c8ee-a591-43c2-ad57-16128a2a68b2")
 	)
 	(wire
 		(pts
@@ -3451,6 +3766,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 111.76) (xy 128.27 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6731cdf-97c4-4ac2-b3d0-fe614910eed1")
+	)
+	(wire
+		(pts
 			(xy 228.6 104.14) (xy 233.68 104.14)
 		)
 		(stroke
@@ -3461,7 +3786,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 111.76) (xy 55.88 111.76)
+			(xy 87.63 111.76) (xy 91.44 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3525,8 +3850,28 @@
 		)
 		(uuid "1a12f4cf-f8ba-469b-b5f5-2b7714aca20e")
 	)
+	(label "TX0"
+		(at 48.26 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28c63f61-1b0a-4059-980e-8a2b9316112b")
+	)
+	(label "BOOT0"
+		(at 128.27 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f44246b-7011-4627-bbb2-e47d38c98786")
+	)
 	(label "IN4"
-		(at 92.71 165.1 180)
+		(at 128.27 165.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3535,8 +3880,18 @@
 		)
 		(uuid "434da124-e07b-4e3f-aae3-a4f29c2e569b")
 	)
+	(label "RX0"
+		(at 48.26 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d0d7961-6023-454b-a21d-a85bea5992fa")
+	)
 	(label "IN1"
-		(at 92.71 160.02 180)
+		(at 128.27 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3575,8 +3930,28 @@
 		)
 		(uuid "7c190444-199b-433f-8bfa-c3a8b64e9365")
 	)
+	(label "BOOT0"
+		(at 67.31 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "821cc959-12b6-4adc-a680-ca8da5189170")
+	)
+	(label "RX0"
+		(at 128.27 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ab9e7ab-a752-4022-9955-c7f549909c29")
+	)
 	(label "IN5"
-		(at 92.71 162.56 180)
+		(at 128.27 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3584,6 +3959,16 @@
 			(justify right bottom)
 		)
 		(uuid "9218bb73-5ca6-4608-a120-8f74e3275339")
+	)
+	(label "TX0"
+		(at 128.27 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "944f9209-feb3-4d76-8c4c-85339308ea4c")
 	)
 	(label "IN3"
 		(at 223.52 30.48 0)
@@ -3614,6 +3999,16 @@
 			(justify right bottom)
 		)
 		(uuid "af096127-a614-4770-976f-43f7816e6d4e")
+	)
+	(label "EN"
+		(at 48.26 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b487ad71-7782-43e6-9e17-83244e2a98a1")
 	)
 	(label "OUT4"
 		(at 269.24 58.42 180)
@@ -3676,7 +4071,7 @@
 		(uuid "f30c29e8-9ee5-4904-abdc-c26b515122ec")
 	)
 	(label "IN2"
-		(at 92.71 157.48 180)
+		(at 128.27 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3686,7 +4081,7 @@
 		(uuid "f4285816-d7b9-4723-8fc0-9224307f6be9")
 	)
 	(label "IN3"
-		(at 92.71 154.94 180)
+		(at 128.27 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3705,6 +4100,16 @@
 		)
 		(uuid "f5d6db5f-4bc1-481a-8e6a-e5704a61d9de")
 	)
+	(label "EN"
+		(at 88.9 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd6e2f8e-9323-4b74-b69f-a0b3e8afff78")
+	)
 	(symbol
 		(lib_id "power:VCC")
 		(at 233.68 91.44 0)
@@ -3714,7 +4119,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00cb5a55-db23-46d2-b91d-085e4dd8457b")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 233.68 95.25 0)
 			(effects
 				(font
@@ -3764,7 +4169,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4413,7 +4818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05e97cbd-b643-4c92-8f3b-d82f5dc320b8")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 29.21 73.6662 0)
 			(effects
 				(font
@@ -4467,7 +4872,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4483,7 +4888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06557416-9961-4ea6-8b49-83180371e359")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR059"
 			(at 181.61 93.98 0)
 			(effects
 				(font
@@ -4533,7 +4938,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR057")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4549,7 +4954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07327878-ff77-49d9-ac96-b2234e882f0a")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR057"
 			(at 57.15 83.82 0)
 			(effects
 				(font
@@ -4599,7 +5004,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR055")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -4615,7 +5020,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08e1a946-ee43-4df2-afd6-6d2f9d6038bf")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 36.83 39.37 0)
 			(effects
 				(font
@@ -4665,7 +5070,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4681,7 +5086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a64ec22-4981-4319-8fc0-09c9b1cd820f")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR038"
 			(at 219.71 69.85 0)
 			(effects
 				(font
@@ -4731,7 +5136,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR036")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4747,7 +5152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "103c59f0-8e8a-44bd-984c-ba0e3879eedf")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 36.83 63.5 0)
 			(effects
 				(font
@@ -4797,7 +5202,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4813,7 +5218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10d13bf9-3e5d-4311-b2af-418b69d5ae27")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR047"
 			(at 46.99 76.2 0)
 			(effects
 				(font
@@ -4863,7 +5268,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR045")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -4879,7 +5284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11cf13aa-e69f-403f-8c99-c5381355b16f")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 26.67 63.5 0)
 			(effects
 				(font
@@ -4929,7 +5334,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4945,7 +5350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "145a3e21-811a-45e3-a4c4-068c1e81288c")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 149.86 69.85 0)
 			(effects
 				(font
@@ -4995,7 +5400,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5010,7 +5415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14e002ba-c4ce-4095-bf38-5cd9ae163be9")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR035"
 			(at 114.3 67.31 0)
 			(effects
 				(font
@@ -5060,7 +5465,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -5145,7 +5550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c1b00a6-0a53-4ef7-bdee-cf7bdc72d82f")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR050"
 			(at 149.86 82.55 0)
 			(effects
 				(font
@@ -5195,7 +5600,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR048")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5211,7 +5616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d751670-617d-4b42-b83c-e8b6f669b31e")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 71.12 53.3462 0)
 			(effects
 				(font
@@ -5265,7 +5670,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5281,7 +5686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d9ed254-56f6-43e7-b98e-97fff0b01f87")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR058"
 			(at 66.04 83.82 0)
 			(effects
 				(font
@@ -5331,7 +5736,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR056")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -5483,7 +5888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23d53e22-1a72-4530-914d-82336cd90da6")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 222.25 72.3962 0)
 			(effects
 				(font
@@ -5537,7 +5942,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5553,7 +5958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25a1bd72-686b-48c5-a4fc-bdcc2462ad29")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 152.4 72.3962 0)
 			(effects
 				(font
@@ -5607,7 +6012,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5839,7 +6244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3037539d-1bb9-4ece-9bc2-041daf854114")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR067"
 			(at 181.61 114.3 0)
 			(effects
 				(font
@@ -5889,7 +6294,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR065")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -5904,7 +6309,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "355ae776-dff4-4e2f-bd48-9c0576e3d6f2")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 129.54 67.31 0)
 			(effects
 				(font
@@ -5954,7 +6359,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5969,7 +6374,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38e7c61f-3042-497d-a909-af666e076790")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 91.44 67.31 0)
 			(effects
 				(font
@@ -6019,7 +6424,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6035,7 +6440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dcab36b-41bc-4042-9271-3b5acc1f773c")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR042"
 			(at 264.16 74.93 0)
 			(effects
 				(font
@@ -6085,7 +6490,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR040")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -6101,7 +6506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fab1c77-41ab-4127-826d-b32508397dc5")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 68.58 73.6662 0)
 			(effects
 				(font
@@ -6155,7 +6560,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -6382,15 +6787,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 52.07 114.3 0)
+		(at 87.63 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "4419c4f4-4ef4-4781-ac5f-8af0ac27c9e6")
-		(property "Reference" "C17"
-			(at 45.466 112.522 0)
+		(property "Reference" "C18"
+			(at 81.026 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6399,7 +6804,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 45.466 114.3 0)
+			(at 81.026 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6408,7 +6813,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 52.07 114.3 0)
+			(at 87.63 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6417,7 +6822,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 114.3 0)
+			(at 87.63 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6426,7 +6831,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 52.07 114.3 0)
+			(at 87.63 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6443,7 +6848,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6459,7 +6864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "456fa8f2-949e-47dc-895f-1041249342f3")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR032"
 			(at 251.46 62.23 0)
 			(effects
 				(font
@@ -6509,7 +6914,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR030")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -6525,7 +6930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47364555-fc44-43ad-9f69-ad3a2403a261")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 59.69 53.3462 0)
 			(effects
 				(font
@@ -6579,7 +6984,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6595,7 +7000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "489319f3-bd8a-46de-ad29-a49cb9570989")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR049"
 			(at 66.04 76.2 0)
 			(effects
 				(font
@@ -6645,7 +7050,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR047")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6653,7 +7058,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 52.07 109.22 180)
+		(at 87.63 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6661,7 +7066,7 @@
 		(dnp no)
 		(uuid "4aecab68-f1f8-477e-b040-374cd631f6bf")
 		(property "Reference" "R12"
-			(at 47.498 108.712 0)
+			(at 83.058 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,7 +7075,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 46.228 110.49 0)
+			(at 81.788 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6679,7 +7084,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 52.07 109.22 0)
+			(at 87.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,7 +7093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 109.22 0)
+			(at 87.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +7102,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 52.07 109.22 0)
+			(at 87.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6722,7 +7127,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 177.8 0)
+		(at 106.68 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6730,8 +7135,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aff5687-48ea-4188-813f-997cec5bc20e")
-		(property "Reference" "#PWR067"
-			(at 71.12 184.15 0)
+		(property "Reference" "#PWR071"
+			(at 106.68 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6740,7 +7145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 182.88 0)
+			(at 106.68 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,7 +7153,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 177.8 0)
+			(at 106.68 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6757,7 +7162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 177.8 0)
+			(at 106.68 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6766,7 +7171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 177.8 0)
+			(at 106.68 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6780,7 +7185,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR067")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -6796,7 +7201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b94ef85-7ccd-463f-aceb-878e14937132")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 46.99 63.5 0)
 			(effects
 				(font
@@ -6846,7 +7251,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -7080,7 +7485,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dfcdd44-807c-4043-b7ab-522bf84df69a")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 39.37 73.6662 0)
 			(effects
 				(font
@@ -7134,7 +7539,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7232,7 +7637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56f4bfd2-18c1-4416-9ee9-6b716de03f12")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 57.15 55.88 0)
 			(effects
 				(font
@@ -7282,7 +7687,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR020")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7297,7 +7702,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a3fb184-6477-448f-9968-05cb459442a3")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR061"
 			(at 151.13 101.6 0)
 			(effects
 				(font
@@ -7347,7 +7752,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR059")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -7362,7 +7767,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5c0c9968-0175-49d0-a0ca-ecfabca13de0")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR08"
 			(at 41.91 39.37 0)
 			(effects
 				(font
@@ -7413,7 +7818,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR069")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7495,7 +7900,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e88806a-1b75-4ac8-a981-274832dea734")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 219.71 35.56 0)
 			(effects
 				(font
@@ -7545,7 +7950,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7561,7 +7966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6072c4ae-f662-478a-a921-91dbe2786d53")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 78.74 53.3462 0)
 			(effects
 				(font
@@ -7615,7 +8020,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7631,7 +8036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6788874a-128d-4f69-b315-74df8eac4ab1")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR045"
 			(at 26.67 76.2 0)
 			(effects
 				(font
@@ -7681,7 +8086,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR043")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7697,7 +8102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67e682be-5c65-42d2-a30d-34a1283269f6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR017"
 			(at 219.71 49.53 0)
 			(effects
 				(font
@@ -7747,7 +8152,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7834,7 +8239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6afa1d93-28f3-4378-942e-4fb9b1822782")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 59.69 73.6662 0)
 			(effects
 				(font
@@ -7888,7 +8293,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -7904,7 +8309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bb8971c-0dcf-494e-aefd-b36c8a62c5d7")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 149.86 35.56 0)
 			(effects
 				(font
@@ -7954,7 +8359,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7970,7 +8375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70121c57-1665-4893-aadc-95a592bb0f77")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 264.16 41.91 0)
 			(effects
 				(font
@@ -8020,7 +8425,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8036,7 +8441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73122b94-2623-442c-8d7f-a2fff8f996fe")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR046"
 			(at 36.83 76.2 0)
 			(effects
 				(font
@@ -8086,7 +8491,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR044")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -8102,7 +8507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76b95b6c-b792-44f8-880a-abe4e808def2")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR040"
 			(at 194.31 74.93 0)
 			(effects
 				(font
@@ -8152,7 +8557,73 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR038")
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 64.77 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "791b167f-db21-4786-b776-1050312a527a")
+		(property "Reference" "#PWR068"
+			(at 64.77 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 64.77 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d714d91b-f14c-4781-8289-2a97cf13813d")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -8168,7 +8639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d471d49-5072-47a6-8aab-ca2dc315e299")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR09"
 			(at 219.71 36.83 0)
 			(effects
 				(font
@@ -8218,7 +8689,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR07")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8234,7 +8705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fda3444-c815-4359-abdc-ed8018162e60")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 49.53 53.3462 0)
 			(effects
 				(font
@@ -8288,7 +8759,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8304,7 +8775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "833321dd-0cae-4e95-8699-32e418030f33")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 251.46 49.53 0)
 			(effects
 				(font
@@ -8354,7 +8825,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8518,7 +8989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ae63033-9f9a-4545-81a4-8de73f0b4a4b")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 68.58 55.88 0)
 			(effects
 				(font
@@ -8568,7 +9039,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8584,7 +9055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d481fa8-d02f-46a0-9e56-0c0e6974f5a5")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR051"
 			(at 181.61 82.55 0)
 			(effects
 				(font
@@ -8634,7 +9105,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR049")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8650,7 +9121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9087a0ba-2c47-4433-ab94-6aacc74b6e17")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 49.53 73.6662 0)
 			(effects
 				(font
@@ -8704,7 +9175,87 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C13")
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+		(at 57.15 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91939938-976f-4bbc-a021-df71e0435810")
+		(property "Reference" "J3"
+			(at 58.42 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Program"
+			(at 58.42 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical"
+			(at 57.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 57.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "28276be4-56f8-42f5-849c-9133143ac586")
+		)
+		(pin "4"
+			(uuid "ffdbc622-1a00-4319-aacf-4dd4b6861f5c")
+		)
+		(pin "3"
+			(uuid "828d4614-37d6-4d95-9ed9-578be8569f2e")
+		)
+		(pin "2"
+			(uuid "87a1f6a4-d2d4-4b68-b519-e05636a9bdc2")
+		)
+		(pin "5"
+			(uuid "a0d92fbb-acd3-40f5-b1c1-15135d21d19b")
+		)
+		(pin "1"
+			(uuid "71811071-7d96-42be-9ace-ed853682b96f")
+		)
+		(instances
+			(project ""
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8720,7 +9271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94ab10df-2e56-4c18-869a-282ce37817da")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR054"
 			(at 26.67 83.82 0)
 			(effects
 				(font
@@ -8770,7 +9321,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR052")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -8851,7 +9402,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96339ce5-d88f-4a41-b85a-702df4c829ea")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011"
 			(at 71.12 34.29 0)
 			(effects
 				(font
@@ -8902,7 +9453,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR010")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8985,7 +9536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a30c74b-4963-45af-b61e-78d784b2a1b4")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 76.2 55.88 0)
 			(effects
 				(font
@@ -9035,7 +9586,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9051,7 +9602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9be7c40b-6ded-4f13-ac1a-210025913041")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR030"
 			(at 76.2 63.5 0)
 			(effects
 				(font
@@ -9101,7 +9652,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR028")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -9117,7 +9668,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e271730-591b-4fd0-9e92-33c20254806b")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 152.4 38.1062 0)
 			(effects
 				(font
@@ -9171,7 +9722,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -9187,7 +9738,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e5385e6-cf9f-4975-befd-6710f6d23eb5")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 153.67 104.1462 0)
 			(effects
 				(font
@@ -9241,7 +9792,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -9393,7 +9944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4bd11e2-ea26-4df3-94da-7c898a865fdc")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR066"
 			(at 151.13 114.3 0)
 			(effects
 				(font
@@ -9443,7 +9994,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR064")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -9458,7 +10009,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a76cba76-69e7-4c0c-9c61-90f27e49b762")
-		(property "Reference" "C18"
+		(property "Reference" "C1"
 			(at 45.72 29.2099 0)
 			(effects
 				(font
@@ -9512,7 +10063,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C18")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9528,7 +10079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a84aed2c-1425-4319-a73a-caaaab1652f5")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR052"
 			(at 219.71 82.55 0)
 			(effects
 				(font
@@ -9578,7 +10129,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR050")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -9594,7 +10145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adf2da04-e6ff-4ef8-813c-43229de31832")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR063"
 			(at 194.31 106.68 0)
 			(effects
 				(font
@@ -9644,7 +10195,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR061")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -9660,7 +10211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae55cad1-5e9d-4340-867f-959982d31f83")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR055"
 			(at 36.83 83.82 0)
 			(effects
 				(font
@@ -9710,7 +10261,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR053")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -9726,7 +10277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af8eb125-8f65-461a-a588-5ae30d46e5d0")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR015"
 			(at 149.86 48.26 0)
 			(effects
 				(font
@@ -9776,7 +10327,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9792,7 +10343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b49f34cb-e234-46f7-a4d3-9056d40be4ee")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR019"
 			(at 26.67 55.88 0)
 			(effects
 				(font
@@ -9842,7 +10393,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR017")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -9858,7 +10409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4bd1411-afaa-484a-b91c-04f03749d2d9")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR05"
 			(at 41.91 31.75 0)
 			(effects
 				(font
@@ -9908,7 +10459,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR068")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -10006,7 +10557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7ea7703-723b-45a7-b7e3-555899bd4f69")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR043"
 			(at 99.06 77.47 0)
 			(effects
 				(font
@@ -10056,7 +10607,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR041")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -10072,7 +10623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b95fa5d3-46ec-44ee-9944-5b653df1b890")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 222.25 39.3762 0)
 			(effects
 				(font
@@ -10126,7 +10677,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -10142,7 +10693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb87278a-0dc0-4efb-b44b-300cd108e3c5")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 181.61 62.23 0)
 			(effects
 				(font
@@ -10192,7 +10743,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -10207,7 +10758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c23bf425-227c-4d8e-bfeb-20ccb4cbc45b")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR062"
 			(at 149.86 100.33 0)
 			(effects
 				(font
@@ -10257,7 +10808,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR060")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -10339,7 +10890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4f1aa02-e709-426a-84fc-bb4be56061e9")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 57.15 63.5 0)
 			(effects
 				(font
@@ -10389,7 +10940,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -10405,7 +10956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c57423be-743c-4018-8c58-9214bca33355")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 39.37 53.3462 0)
 			(effects
 				(font
@@ -10459,7 +11010,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10475,7 +11026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6805264-b625-46ce-9e1c-c0eeabb62c5a")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR044"
 			(at 121.92 77.47 0)
 			(effects
 				(font
@@ -10525,7 +11076,73 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR042")
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6c70f05-9f9c-4013-8b00-338bb08086c8")
+		(property "Reference" "#PWR069"
+			(at 71.12 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.548 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea9805f6-c221-4f47-a9ae-2384bb88d6ca")
+		)
+		(instances
+			(project "Led-Controller"
+				(path "/222b9972-7c70-4368-986f-3bb219717620"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -10533,7 +11150,7 @@
 	)
 	(symbol
 		(lib_id "RF_Module:ESP32-WROOM-32E")
-		(at 71.12 142.24 0)
+		(at 106.68 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10542,7 +11159,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8eb2088-cfc0-4903-9d13-311d03825b4c")
 		(property "Reference" "U8"
-			(at 73.3141 104.14 0)
+			(at 108.8741 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10551,7 +11168,7 @@
 			)
 		)
 		(property "Value" "ESP32-WROOM-32E"
-			(at 73.3141 106.68 0)
+			(at 108.8741 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10560,7 +11177,7 @@
 			)
 		)
 		(property "Footprint" "RF_Module:ESP32-WROOM-32D"
-			(at 87.63 176.53 0)
+			(at 123.19 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10569,7 +11186,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf"
-			(at 71.12 142.24 0)
+			(at 106.68 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10578,7 +11195,7 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-D0WD-V3 SoC, without PSRAM, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
-			(at 71.12 142.24 0)
+			(at 106.68 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10722,7 +11339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdb690cc-81a9-4a17-91d9-6ae33be4dda8")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 181.61 48.26 0)
 			(effects
 				(font
@@ -10772,7 +11389,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -10780,7 +11397,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 71.12 106.68 0)
+		(at 106.68 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10788,8 +11405,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf4c1b68-7147-45bf-b792-352c66901ed2")
-		(property "Reference" "#PWR063"
-			(at 71.12 110.49 0)
+		(property "Reference" "#PWR065"
+			(at 106.68 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10798,7 +11415,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 71.12 101.6 0)
+			(at 106.68 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10806,7 +11423,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 106.68 0)
+			(at 106.68 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10815,7 +11432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 106.68 0)
+			(at 106.68 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10824,7 +11441,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 71.12 106.68 0)
+			(at 106.68 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10838,7 +11455,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR063")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -10854,7 +11471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3fd13bd-a715-401e-aae1-0bb073553e12")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR020"
 			(at 36.83 55.88 0)
 			(effects
 				(font
@@ -10904,7 +11521,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR018")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -10912,7 +11529,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 52.07 106.68 0)
+		(at 87.63 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10920,8 +11537,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d54cf7d7-37d2-4495-825a-6005853e546e")
-		(property "Reference" "#PWR062"
-			(at 52.07 110.49 0)
+		(property "Reference" "#PWR064"
+			(at 87.63 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10930,7 +11547,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 52.07 101.6 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10938,7 +11555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 106.68 0)
+			(at 87.63 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10947,7 +11564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 106.68 0)
+			(at 87.63 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10956,7 +11573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 52.07 106.68 0)
+			(at 87.63 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10970,7 +11587,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR062")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -10985,7 +11602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d54fd854-49e6-4d94-8f10-ee7294b21062")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 30.48 53.3399 0)
 			(effects
 				(font
@@ -11039,7 +11656,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -11055,7 +11672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d65d12bb-def4-47b6-9709-0b8c67d45764")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 68.58 63.5 0)
 			(effects
 				(font
@@ -11105,7 +11722,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11113,7 +11730,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 116.84 0)
+		(at 87.63 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11121,8 +11738,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d75f7b37-2d11-4077-9a9a-c48bc5630b13")
-		(property "Reference" "#PWR066"
-			(at 52.07 123.19 0)
+		(property "Reference" "#PWR070"
+			(at 87.63 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11131,7 +11748,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 121.92 0)
+			(at 87.63 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11139,7 +11756,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 116.84 0)
+			(at 87.63 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11148,7 +11765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 116.84 0)
+			(at 87.63 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11157,7 +11774,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 116.84 0)
+			(at 87.63 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11171,7 +11788,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR066")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -11187,7 +11804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dad9eec2-9726-4b44-980a-c36131adff96")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR056"
 			(at 46.99 83.82 0)
 			(effects
 				(font
@@ -11237,7 +11854,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR054")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -11546,7 +12163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e49619f7-d1dd-4d72-b042-e8e973e45b8a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 46.99 55.88 0)
 			(effects
 				(font
@@ -11596,7 +12213,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR019")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -11677,7 +12294,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9b004ee-4795-4204-84ef-287a5afb44c2")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR010"
 			(at 48.26 34.29 0)
 			(effects
 				(font
@@ -11728,7 +12345,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -11815,7 +12432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec7f1a75-b5ad-4f9f-8b7e-0f114383783a")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR012"
 			(at 194.31 40.64 0)
 			(effects
 				(font
@@ -11865,7 +12482,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR08")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -11880,7 +12497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed26d732-85cc-41aa-a12f-76241be5492d")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR041"
 			(at 219.71 68.58 0)
 			(effects
 				(font
@@ -11930,7 +12547,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR039")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -11946,7 +12563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed84bc84-d47a-4bfc-8cd7-e390ecd9753c")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR048"
 			(at 57.15 76.2 0)
 			(effects
 				(font
@@ -11996,7 +12613,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR046")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -12222,7 +12839,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eebb8858-ff9c-47cf-9ca3-603b59f32cc5")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR034"
 			(at 106.68 67.31 0)
 			(effects
 				(font
@@ -12272,7 +12889,7 @@
 		(instances
 			(project ""
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR032")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12356,7 +12973,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9521c7b-efb5-47ae-8f94-10b7eba64dfb")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 149.86 68.58 0)
 			(effects
 				(font
@@ -12406,7 +13023,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR037")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -12422,7 +13039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe7f3151-af96-4a11-84b0-8da78cca8854")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR053"
 			(at 251.46 82.55 0)
 			(effects
 				(font
@@ -12472,7 +13089,7 @@
 		(instances
 			(project "Led-Controller"
 				(path "/222b9972-7c70-4368-986f-3bb219717620"
-					(reference "#PWR051")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
